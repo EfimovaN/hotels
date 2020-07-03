@@ -121,14 +121,17 @@
               <label for="departure-date">Дата выезда:</label>
               <input id="departure-date" type="text" name="arrival-date" value="" placeholder="4 июля 2017">
             </p>
-            <p class="hotel-search-item">
-              <label for="adult">Взрослые:</label>
-              <input id="adult" type="number" name="adult" value="" placeholder="2">
-            </p>
-            <p class="hotel-search-item">
-              <label for="children">Дети:</label>
-              <input id="children" type="number" name="children" value="" placeholder="0">
-            </p>
+            <div class="numbers">
+              <p class="hotel-search-item-min">
+                <label for="adult">Взрослые:</label>
+                <input id="adult" type="number" name="adult" value="" placeholder="2">
+              </p>
+              <p class="hotel-search-item-min">
+                <label for="children">Дети:</label>
+                <input id="children" type="number" name="children" value="" placeholder="0">
+              </p>
+            </div>
+            
             <button class="button" type="submit">Найти</button>
           </form>
         </div>

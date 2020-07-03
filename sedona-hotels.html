@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 </head>
 <body class="inner-page">
   <div class="container">
@@ -34,16 +35,15 @@
       </nav>
     </header>
   
-    <!-- <main>
+    <main>
       <h1 class="visually-hidden">Поиск гостиницы</h1>
       <section class="filters">
         <form class="filter" method="get" action="#">
-          <fieldset>
+          <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool"
-                  checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
                   <label for="filter-pool">Бассейн</label>
                 </li>
                 <li class="filter-option">
@@ -56,12 +56,11 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="type">
             <legend>Тип жилья:</legend>
               <ul>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel"
-                  checked>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
                   <label for="filter-hotel">Гостиница</label>
                 </li>
                 <li class="filter-option">
@@ -76,12 +75,27 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-              <input class="visually-hidden filter-input filter-input-checkbox" type="range" min="0" max="4000" value="3000" name="value" id="filter-value">
-              <label for="filter-value">От 0 до 3000</label>
-              <button class="button" type="submit">Показать</button>
-          </fieldset>
+         
+          <fieldse class="filter-range">
+            <legend class="filter-range-title">Стоимость в сутки (р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </fieldse>
+
+
+
+
+
         </form>
       </section>
   
@@ -169,28 +183,32 @@
           </li>
         </ul>
       </section>
-    </main> -->
+    </main>
   
-    <!-- <footer class="main-footer">
-      <b class="footer-hashtag"> #Visitsedona </b>
-      <div class="footer-social">
-        <ul>
-          <li>
-            <a class="social-button" href="#">Твиттер</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Ютуб</a>
-          </li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        Website by
+    <footer class="main-footer">
+      <p class="footer-hashtag">#Visitsedona </p>
+      <ul class="footer-social">
+        <li>
+          <a class="social-button" href="#"> <span class="visually-hidden">Твиттер</span>
+            <i class="fab fa-twitter"></i>          
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#"> <span class="visually-hidden">Фейсбук</span>
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="#"> <span class="visually-hidden">Ютуб</span>
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="footer-copyright">
+        <p>Website by</p>
         <a href="https://htmlacademy.ru"><img src="svg/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy"></a>
-      </p>
-    </footer> -->
+      </div>       
+  </footer>
   </div>
 </body>
 
