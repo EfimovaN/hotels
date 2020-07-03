@@ -70,7 +70,6 @@ a {
   background-color: #ffffff;
 }
 
-
 .main-navigation {
   background-color: #fff;
   font-size: 14px;
@@ -289,8 +288,6 @@ color: #bcbcbc;
   border: 2px solid #e5e5e5;
 }
 
-
-
 .numbers {
   display: flex;
   flex-wrap: nowrap;
@@ -329,7 +326,7 @@ color: #bcbcbc;
   display: inline-block;
   margin-top: 30px;
   margin-bottom: 15px;
-  padding: 16px 190px;
+  padding: 16px 17px;
   font: inherit;
   font-size: 21px;
   line-height: 1.238;
@@ -417,7 +414,7 @@ color: #bcbcbc;
   margin-right: 10px;
 }
 
-/* Фильтры */
+/* Форма поиска */
 
 .filters {
   padding: 25px 73px 0;
@@ -428,21 +425,19 @@ color: #bcbcbc;
   color: #ffffff;
   font-weight: 400;
   text-align: left;
-  
 }
 
 .filter {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
-  
+  padding: 0; 
 }
+
 .filter fieldset {
   padding: 0;
   margin: 0;
   margin-right: 40px;
-  
   border: none;
 }
 
@@ -453,9 +448,7 @@ color: #bcbcbc;
 
 .filter-option label {
   position: relative;
-
   display: block;
-
   cursor: pointer;
   user-select: none;
 }
@@ -472,7 +465,6 @@ color: #bcbcbc;
   top: 0;
   width: 16px;
   height: 16px;
-
   border: 2px solid #ffffff;
 }
 
@@ -498,25 +490,19 @@ legend {
   text-align: left;
 }
 
-
 .infrastructure {
   width: 200px;
 }
 
 .type {
-
   width: 200px;
 }
 
-
-
-
 /* Ползунок стоимости */
-
 
 .filter-range {
   width: 330px;
-  margin-left: auto; /* для демо */
+  margin-left: auto;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -528,12 +514,9 @@ legend {
 
 .price-controls {
   position: relative;
-  
   height: 36px;
   margin-bottom: 20px;
-  
   font-size: 0;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
@@ -543,21 +526,17 @@ legend {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 2px;
   height: 22px;
-
   background: #ffffff;
   transform: translate(-50%, -50%);
 }
 
 .price-controls label {
   display: inline-block;
-
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
-
   cursor: pointer;
 }
 
@@ -570,40 +549,33 @@ legend {
 .price-controls input {
   width: 50px;
   margin: 0;
-
   color: inherit;
   font: inherit;
-
   background: none;
   border: none;
 }
 
 .range-controls {
   position: relative;
-
   margin-bottom: 32px;
 }
 
 .range-controls .scale {
   height: 2px;
-
   background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-
   background: #ffffff;
 }
 
 .range-toggle {
   position: absolute;
   top: -9px;
-  
   width: 4px;
   height: 4px;
-
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
@@ -627,12 +599,10 @@ legend {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -641,6 +611,190 @@ legend {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
+}
+
+/* Результаты поиска сортировка*/
+
+.menu-searching-results {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+ 
+  padding: 10px 73px;
+}
+
+.menu-searching-results p {
+  margin: 0;
+  margin-left:40px;
+  font-weight: 700;
+}
+
+
+.searching-navigation {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+.searching-navigation li {
+  position: relative;
+  margin-left: 30px;
+}
+
+.searching-navigation a {
+  color: #b1b1b1;
+  border-bottom: 1px dotted #81b3d2 ;
+}
+
+li .current {
+  border: none;
+  color: #81b3d2;
+}
+
+/* .top::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  background-image: url(../svg/check2.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
+
+/* Результаты поиска*/
+
+.searching-results {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 700;
+  border-top: 1px solid #b1b1b1;
+}
+
+.catalog-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 73px 20px 240px;
+  
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.catalog-item img {
+  position: absolute;
+  top: 30px;
+  left: 73px;
+}
+
+.catalog-wrap {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.catalog-wrap h3 {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 21px;
+  color: #000000;
+}
+
+.price {
+  padding-right: 90px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+
+
+.button-wrap {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.inner {
+  margin: 0;
+  font-size: 14px;
+  
+  margin-right: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.inner-brown {
+  margin: 0;
+  font-size: 14px;
+  
+  background-color: #766357;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.inner-brown:hover,
+.inner-brown:focus {
+  background-color: #604e43;
+}
+
+.inner-brown:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.rate {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.stars {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 50px;
+  margin-left: auto;
+}
+
+.stars p {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  margin-left: 5px;
+  background-image: url(../svg/star.svg);
+  background-position: left center; 
+  background-repeat: no-repeat;
+}
+
+.rate b {
+  padding-left: 14px;
+  padding-right: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #f2f2f2;
+}
+
+/* Подвал внутренняя страница*/
+
+.inner-footer {
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  padding: 10px 73px;
+  background-color: #fdfdfd;
+  opacity: 0.9;
+  min-height: 100px;
 }
