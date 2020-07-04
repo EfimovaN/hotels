@@ -93,7 +93,7 @@ color: #bcbcbc;
 .site-navigation .current {
   color: #766357;
 }
-}
+
 
 .main-header-logo{
   width: 138px;
@@ -202,27 +202,31 @@ color: #bcbcbc;
   position: relative;
 }
 
-.search-container a {
+.button-modal {
   display: inline-block;
-  padding-top: 30px;
+  margin: 0;
   width: 570px;
-  height: 56px;
+  height: 86px;
   vertical-align: middle;
   font-size: 21px;
   line-height: 1.238;
   font-weight: 700;
+  text-transform: uppercase;
   background-color: #766357;
   color: white;
+  border: none;
 } 
 
-.search-container a:hover,
-.search-container a:focus {
+.button-modal:hover,
+.button-modal:focus {
   background-color: #604e43;
+  border: none;
 }
 
-.search-container a:active {
+.button-modal:active {
   background-color: #503e33;
   color: #857871;
+  border: none;
 }
 
 .hotel-search-form {
@@ -245,7 +249,14 @@ color: #bcbcbc;
   text-align: left;
 }
 
+.numbers {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
 .hotel-search-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -272,22 +283,8 @@ color: #bcbcbc;
   border: none;
 }
 
-.hotel-search-item input:hover,
-.hotel-search-item-min input:hover {
-  background-color: #ebebeb;
-}
-
-.hotel-search-item input:focus,
-.hotel-search-item-min input:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-}
-
-.numbers {
+.hotel-search-item-min {
   position: relative;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
 }
 
 .hotel-search-item-min input {
@@ -300,6 +297,56 @@ color: #bcbcbc;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
+}
+
+.hotel-search-item input:hover,
+.hotel-search-item-min input:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-item input:focus,
+.hotel-search-item-min input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.calendar svg {
+  position: absolute;
+  width: 20px;
+  height: 25px;
+  right: 12px;
+  top: 6px; 
+}
+
+.minus svg {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 98px;
+  top: 12px;
+}
+
+.plus svg {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 12px;
+  top: 12px;
+}
+
+.calendar svg:hover,
+.calendar svg:focus,
+.minus svg:hover,
+.minus svg:focus,
+.plus svg:hover,
+.plus svg:focus {
+  fill: #000000;
+}
+
+.calendar svg:active,
+.minus svg:active,
+.plus svg:active {
+  fill: #81b3d2;
 }
 
 .button {
